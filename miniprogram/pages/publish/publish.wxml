@@ -1,0 +1,36 @@
+<!--pages/publish/publish.wxml-->
+<view class="box">
+<button class="publish" type="primary" bindtap="publish">发表</button>
+<textarea type="textarea" class="content" bindinput="input" placeholder="这一刻你的想法..."></textarea>
+</view>
+
+<!-- <button type="primary" bindtap="uploadpic">上传图片</button>
+<view class="pic-list">
+  <image wx:for="{{piclist}}" wx:key="item" mode="aspectFill" src="{{item}}"></image>
+</view> -->
+
+
+<view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                  <view class="weui-uploader__title">点击可预览选好的图片</view>
+                  <view class="weui-uploader__info">{{piclist.length}}/{{count[countIndex]}}</view>
+                </view>
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files">
+                    <block wx:for="{{piclist}}" wx:for-item="image" wx:key="image">
+                      <view class="weui-uploader__file">
+                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="uploadpic"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>

@@ -1,0 +1,18 @@
+/* pages/login/login.wxss */
+.icon-image{
+  margin: 100rpx auto;
+  width: 250rpx;
+  height: 250rpx
+}
+.icon-image image{
+  width: 250rpx;
+  height: 250rpx
+}
+.name{
+  text-align: center;
+  margin-bottom: 100rpx
+}
+button{
+  width: 50%;
+  border-radius: 5px
+}

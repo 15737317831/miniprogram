@@ -1,0 +1,45 @@
+<!--pages/message/message.wxml-->
+<view class="head">
+  <image class="bg" src="../../images/bg.jpg"></image>
+  <image class="headpic" src="{{avatarUrl}}"></image>
+  <button class="publish" type="primary" bindtap="publish">发表</button>
+</view>
+
+<!-- 朋友圈列表 -->
+<view class="messagelist" wx:for="{{datas}}" wx:key="index">
+  <view class="user">
+    <view class="user-icon">
+      <image src="{{item.userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="nickName">{{item.userInfo.nickName}}</view>
+  </view>
+  <view class="content">
+    <view class="text-content">{{item.content}}</view>
+    <view class="image-list">
+      <image wx:if="{{item}}" wx:for="{{item.fileList}}" wx:key="item" src="{{item}}" data-src="{{item}}" bindtap="previewImage" lazy-load="true"></image>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="time">{{item.time}}</view>
+    <view class='btnsRow flexRowL'>
+
+      <view class='ml20  flexC' bindtap='zan' data-index='{{index}}'>
+        <image src='{{item.zanUrl}}' class='btns ml40'></image>
+        <text class='ml10'> {{item.vote || 0}}</text>
+      </view>
+      <view class='ml60  flexC' bindtap='nav2Detail' data-id='{{item.id}}'>
+        <image src='../../images/say.png' class='btns ml40'></image>
+        <text class='ml10'> {{item.commentNum || 0}}</text>
+      </view>
+      <!-- <view class='ml60 '><label class='flexC'   > <image src='../../images/share.png' class='btns ml40'></image> <text class='ml10'> {{item.shareNum || 0}}</text> <button open-type='share' hidden='hidden'  data-qiuId='{{item.id}}' data-shareNum='{{item.shareNum}}'></button> </label> </view> -->
+    </view>
+    <view class="mt10">
+      <view wx:if="{{item.commentNum!=0}}" wx:for="{{item.comment}}" wx:key="item" class='garyLine'>
+      <view class='comment'>{{item.avatar}}: {{item.comment}}</view>
+    </view>
+    </view>
+    
+
+  </view>
+
+</view>

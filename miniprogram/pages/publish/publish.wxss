@@ -1,0 +1,41 @@
+/* pages/publish/publish.wxss */
+@import "../../common/lib/weui.wxss";
+
+.weui-agree__link {
+  display: inline;
+  color: #586c94;
+}
+.box{
+  margin-top: 20px 
+}
+.content{
+  float: left;
+  /* border: 1px black solid; */
+  padding: 0 25rpx;
+  background-color: #fff;
+  /* height: 5vh;
+  width: 66%; */
+  width: 88%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left:10px;
+  padding-right: 10px
+}
+.publish{
+  float: right;
+  width: 80px;
+  height: 5vh;
+  line-height: 5vh;
+  border-radius: 3px;
+  margin:10px 10px 
+}
+.pic-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin:10px;  
+}
+.pic-list image{
+  width: 100px;
+  height: 100px;
+  margin: 5px
+}

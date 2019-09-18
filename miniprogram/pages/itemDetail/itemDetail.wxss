@@ -1,0 +1,12 @@
+/* pages/itemDetail/itemDetail.wxss */
+.buttona
+{
+    background:#09BB07; 
+    width:600rpx; 
+    height:88rpx; 
+    color:#fff; 
+    font-size:14pt;
+    margin-top:100rpx;
+    margin-left:80rpx;
+    line-height:40px;
+}

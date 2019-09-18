@@ -1,0 +1,17 @@
+<view class="userInfo">
+  <view class="icon-image">
+    <image src="{{avatarUrl}}"></image>
+  </view>
+  <view class="name">{{nickName}}</view>
+</view>
+<button 
+type="primary"
+bindgetuserinfo="getUserInfo"
+open-type="getUserInfo"
+wx:if="{{!isLogin}}"
+>立即登录</button>
+<button
+  wx:else
+  type="primary"
+  bindtap="jump"
+>跳转</button>

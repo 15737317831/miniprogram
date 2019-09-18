@@ -1,0 +1,228 @@
+/* pages/message/message.wxss */
+.head{
+  position: relative;
+  height: 30vh;
+  margin: 0 0 50px 0;
+}
+.bg{
+  float: left;
+  width: 100%;
+  filter: blur(1px)
+}
+.headpic{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 8px; 
+  top: 15%;
+  left: 40%;
+}
+.publish{
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  margin: auto
+}
+.messagelist{
+  margin:10px 35px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #ccc;
+  
+}
+.user-icon image{
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 
+}
+.nickName{
+  float: left;
+  margin: 10px;
+}
+.content{
+  clear: both;
+  width: 80vw;
+  margin-left: 30px
+}
+.content .text-content{
+  width: 68vw;
+  word-wrap:break-word;
+  padding: 5px
+}
+.image-list{
+  display: flex;
+ flex-wrap: wrap;
+}
+.image-list image{
+  width: 85px;
+  height: 85px;
+  margin: 5px
+}
+.detail{
+  margin: 2px 0 2px 5px
+}
+.detail .time{
+ display: inline-block;
+ float: left;
+  font-size: 12px;
+  color: rgba(36, 37, 37, 0.5)
+}
+.icon-good{
+  float: right;
+  margin-right: 5px; 
+}
+.icon-good image,.icon-favorite image{
+  width: 20px;
+  height: 20px;
+}
+.icon-favorite{
+  float: right;
+  margin-right: 5px; 
+}
+
+
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 28rpx;
+}
+.item{
+  width: 100%;
+  margin-bottom: 30rpx;  
+}
+
+/* .item:last-child{
+  margin-bottom: 30rpx;
+} */
+
+.userInfo{
+  width: 100%;
+  margin-left: 30rpx;
+}
+
+.userImg{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.userInfo{
+  height: 60rpx;
+
+}
+
+.posiFix{
+  position: fixed;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.addIcon{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.txt{
+  width: 98%;
+  line-height: 50rpx;
+  text-align: left;
+  padding-left: 20rpx;
+  padding-right: 30rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+
+.img{
+  width: 100%;
+}
+
+.dzImg{
+  min-height: 500rpx;
+
+}
+
+.dzImg1{
+  width: 100%;
+}
+.dzImg2{
+  width: 49%;
+  margin-left: 1%;
+}
+.dzImg3{
+  width: 32%;
+  margin-left: 1%;
+}
+.dzImg4{
+  width: 24%;
+  margin-left: 1%;
+}
+
+.btnsRow{
+  margin:5px; 
+  height: 15rpx;
+  line-height: 15rpx;
+  font-size: 12px;
+  color: rgba(36, 37, 37, 0.5);
+}
+
+
+
+.btns{
+  color: rgba(36, 37, 37, 0.5);
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 12px;
+}
+
+.displayBlo{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #999;
+  font-size: 32rpx;
+}
+
+.garyLine{
+  width: 100%;
+  background-color: rgb(240, 234, 234);
+}
+.garyLine .comment{
+  padding-top: 3px;
+  height: 3vh;
+  text-indent: 10px;
+  line-height: 3vh;
+  font-size: 12px;
+  text-align: left;
+}
+.mt10{
+  margin-top: 15px;
+}
+.pushTop{
+  background: #ccc;
+  color: #999;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.flexRowL{
+  display: flex;
+  justify-content:flex-end;
+
+}
+.ml10{
+  margin-left: 10px;
+  line-height: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+.ml40{
+  margin-left: 8px; 
+   vertical-align: middle; 
+}
+.flexC{
+  margin-bottom: 5px;  
+}
